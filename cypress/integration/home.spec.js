@@ -6,10 +6,10 @@ describe('home page', ()=>{
         // cy é o comando do cypress para ter acesso aos recursos do framework
 
         // viewport serve para mudar a resolução da aplicação na tela (no caso, para full hd)
-        cy.viewport(1440, 900)
+        // cy.viewport(1440, 900)
 
         // visit é uma função em js para o cypress que recebe um argumento, no caso o endereço que a aplicação deve acessar
-        cy.visit('https://buger-eats.vercel.app')
+        cy.visit('/')
 
         cy.get('#page-home main h1').should('have.text', 'Seja um parceiro entregador pela Buger Eats')
     })
